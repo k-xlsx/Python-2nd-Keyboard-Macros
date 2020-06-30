@@ -1,7 +1,7 @@
 """
 Module containing all macros corresponding to every key
 
-The Macro object stores the function you want to call every time the macro is used, 
+The Macro object stores the function you want to call every time the macro is used,
 as well as its args and kwargs.
 """
 
