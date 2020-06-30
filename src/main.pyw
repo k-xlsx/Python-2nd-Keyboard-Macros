@@ -7,18 +7,20 @@ from pynput import keyboard
 from py_macro.macros import MACROS
 
 
-LUAMACROS_PATH = r'D:\Program Files FAST\luamacros\LuaMacros.exe'
+LUAMACROS_PATH = r''        # input your LuaMacros.exe path here
 
 ON_PRESS_DELAY = 0.5
 
 
-keypressed_path = os.path.abspath(os.path.dirname(__file__))[:-3] + '/res/keypressed.txt'
-luamacros_script_path = os.path.abspath(os.path.dirname(__file__)) + '/TaranVH_LUAMACROS/SECOND_KEYBOARD_script_for_LUA_MACROS.lua'
+keypressed_path = os.path.abspath(os.path.dirname(__file__))[:-3] + r'\res\keypressed.txt'
+luamacros_script_path = os.path.abspath(os.path.dirname(__file__)) + r'\TaranVH_LUAMACROS\SECOND_KEYBOARD_script_for_LUA_MACROS.lua'
 
 
 def main():
+    # kill LuaMacros process upon exiting
     atexit.register(proc.kill_proc_by_name, 'LuaMacros.exe')
 
+    # set low priority
     proc.set_low_proc_priority()
 
     def file_exists(func):
@@ -40,18 +42,20 @@ def main():
             return
 
 
-    def on_press(key):
+    def on_f20_press(key):
         if key == keyboard.Key.f20:
             keypressed = read_keypressed()
+            print(keypressed)
             if keypressed in MACROS.keys():
                 MACROS[keypressed].run()
                 wipe_keypressed()
             time.sleep(ON_PRESS_DELAY)
 
-
+    # open LuaMacros script
     subprocess.Popen([LUAMACROS_PATH, '-r', luamacros_script_path])
 
-    with keyboard.Listener(on_press=on_press, on_release=None) as listener:
+    # listen for f20
+    with keyboard.Listener(on_press=on_f20_press, on_release=None) as listener:
         listener.join()
 
 

@@ -1,4 +1,4 @@
--- TaranVH's script I modified a bit
+-- TaranVH's script I modified a bit (my change is marked with *):
 
 -- video explanation is HERE: https://www.youtube.com/watch?v=Arn8ExQ2Gjg
 -- note that some of the code has changed since then (it works better now!)
@@ -8,10 +8,7 @@
 -- Then, press any key on that keyboard to assign logical name ('MACROS') to macro keyboard
 clear() --clear the console from last run
 
-lmc_minimize()
-lmc.minimizeToTray = false
-
-local keyboardIdentifier = '2CD09D5B'
+local keyboardIdentifier = '0000AAA'
 
 
 
@@ -35,18 +32,18 @@ print('You need to get the identifier code for the keyboard with name "MACROS"')
 print('Then replace the first 0000AAA value in the code with it. This will prevent having to manually identify keyboard every time.')
 -- Hide window to tray to keep taskbar tidy
 lmc.minimizeToTray = true
---lmc_minimize()
+lmc_minimize()
 
 --Start Script
 sendToAHK = function (key)
       --print('It was assigned string:    ' .. key)
-      local file = io.open("E:\\Programming\\Python\\My Projects\\Source code\\keyboard_macros\\res\\keypressed.txt", "w") -- writing this string to a text file on disk is probably NOT the best method. Feel free to program something better!
+      local file = io.open("INPUT ABSOLUTE PATH HERE\\res\\keypressed.txt", "w") -- *changed file path* writing this string to a text file on disk is probably NOT the best method. Feel free to program something better!
       --If you didn't put your AutoHotKey scripts into C:/AHK, Make sure to substitute the path that leads to your own "keypressed.txt" file, using the double backslashes.
 	  --print("we are inside the text file")
       file:write(key)
       file:flush() --"flush" means "save." Lol.
       file:close()
-      lmc_send_keys('{F20}')  --(Needed to change to F20 'cause pynput doesn't accept F24) This presses F20. Using the F20 key to trigger AutoHotKey is probably NOT the best method. Feel free to program something better!
+      lmc_send_keys('{F20}')  --*Needed to change to F20 'cause pynput doesn't accept F24* This presses F20. Using the F20 key to trigger AutoHotKey is probably NOT the best method. Feel free to program something better!
 end
 
 local config = {
