@@ -1,4 +1,5 @@
 -- TaranVH's script I modified a bit (my change is marked with *):
+-- https://github.com/TaranVH/2nd-keyboard/tree/master/LUAMACROS
 
 -- video explanation is HERE: https://www.youtube.com/watch?v=Arn8ExQ2Gjg
 -- note that some of the code has changed since then (it works better now!)
