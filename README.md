@@ -27,6 +27,7 @@ A kinda wonky way to use a 2nd keyboard as a macro keyboard and the *twist* is t
 		    __init__.py
 		    macro.py							// Module containing the Macro object
 		    macros.py							// Module where you set up macros
+		    README.MD
 		/TaranVH_LUAMACROS
 			SECOND_KEYBOARD_script_for_LUA_MACROS.lua 		// TaranVH's lua script
 		main.pyw							// Module to run
