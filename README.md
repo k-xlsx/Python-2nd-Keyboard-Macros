@@ -8,7 +8,7 @@ A kinda wonky way to use a 2nd keyboard as a macro keyboard and the *twist* is t
 
 ## Setup
 
- 1. Download [luamacros](https://github.com/me2d13/luamacros).
+ 1. Download [luamacros](https://github.com/me2d13/luamacros) binary.
  2. Connect the 2nd keyboard and run [/src/TaranVH_LUAMACROS/SECOND_KEYBOARD_script_for_LUA_MACROS.lua](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/blob/master/src/TaranVH_LUAMACROS/SECOND_KEYBOARD_script_for_LUA_MACROS.lua) in luamacros.
  3. Copy the keyboard's identifier code to the keyboardIdentifier variable. *(Read comments in the script for an explanation)*
  4. Input absolute path to the [/res](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/tree/master/res) folder of the project *(honestly I can't figure out how to put relative path in there)*.
