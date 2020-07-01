@@ -14,7 +14,7 @@ A kinda wonky way to use a 2nd keyboard as a macro keyboard and the *twist* is t
  4. Input absolute path to the [/res](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/tree/master/res) folder of the project *(honestly I can't figure out how to put relative path in there)*.
  5. Verify [/res/keypressed.txt](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/blob/master/res/keypressed.txt) is being written to.
  6. Input your LuaMacros.exe file path to [/src/main.pyw](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/blob/master/src/main.pyw), LUAMACROS_PATH.
- 7. Verify it's run main.pyw and verify it's working. 
+ 7. Run main.pyw and verify it's working. 
  8. Configure your macros in the [**/src/py_macro/macros.py](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/blob/master/src/py_macro/macros.py) module *(just input your methods with their args/kwargs into the corresponding Macro object in MACROS dict)*.
  9. Input your pythonw.exe path into [/run_macro_keyboard.bat](https://github.com/k-xlsx/Python-2nd-Keyboard-Macros/blob/master/run_macro_keyboard.bat) and pray for the best.
 
