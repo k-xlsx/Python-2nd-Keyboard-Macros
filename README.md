@@ -32,8 +32,8 @@ A kinda wonky way to use a 2nd keyboard as a macro keyboard and the *twist* is t
 			SECOND_KEYBOARD_script_for_LUA_MACROS.lua 		// TaranVH's lua script
 		main.pyw							// Module to run
 		proc.py								// Module used to optimise it a little bit
-    	README.MD
-    	run_macro_keyboard.bat							// Batch file to run
+	README.MD
+	run_macro_keyboard.bat							// Batch file to run
 	    
 
 ## How it's botched
