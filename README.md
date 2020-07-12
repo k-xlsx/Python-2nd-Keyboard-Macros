@@ -28,12 +28,12 @@ A kinda wonky way to use a 2nd keyboard as a macro keyboard and the *twist* is t
 		    macro.py							// Module containing the Macro object
 		    macros.py							// Module where you set up macros
 		    README.MD
-		/TaranVH_LUAMACROS
+	    /TaranVH_LUAMACROS
 			SECOND_KEYBOARD_script_for_LUA_MACROS.lua 		// TaranVH's lua script
-		main.pyw							// Module to run
-		proc.py								// Module used to optimise it a little bit
-	README.MD
-	run_macro_keyboard.bat							// Batch file to run
+            main.pyw								// Module to run
+	    proc.py								// Module used to optimise it a little bit
+    README.MD
+    run_macro_keyboard.bat							// Batch file to run
 	    
 
 ## How it's botched
